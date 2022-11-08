@@ -1,0 +1,241 @@
+*{
+    transition: all 0.3s ease-in 0.4s;
+}
+body{
+    border: 0px;
+    margin: 0px;
+}
+:root{
+    --PrimColor: rgb(0,0,0);
+    --SecoColor: rgb(207,207,207);
+    --background: rgb(200, 200, 200);
+    --backgroundTab:  rgb(213, 213, 213);
+    --leftboard: rgb(154,154,154);
+    --htop: 14px;
+    --hleft: 2px;
+    --hlogo: rgb(36, 36, 36);
+
+}
+div.bottom{
+    position: absolute;
+    top: 110px;
+    --left: calc(60px + 10px + 15px);
+    left: var(--left);
+    width: calc(100% - 30px - var(--left) - 10px);
+    height: calc(100% - 90px);
+    border-radius: 30px 30px 0px 0px;
+    background-color: var(--backgroundTab);
+}
+div.leftboard{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 110px;
+    width: 60px;
+    height: calc(100% - 90px);
+    background-color: var(--leftboard);
+    border-radius: 25px 25px 0px 0px ;
+    }
+    div.leftboard:hover{
+    width: 260px;
+    }
+div.container{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+}
+div.logo{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 15px;
+    top: 20px;
+    left:10px;
+    right: 10px;
+    scale: 0.9;
+    transition: all 0.2s ease-in-out 0s;
+}
+.lg{
+    width: 60px;
+    height: 70px;
+    background-color: rgba(0, 255, 255, 0);
+    border-radius: 25px 25px 0px 0px;
+
+}
+div.logotitle{
+    font-family: 'Brush Script MT', cursive;
+    top: calc(50% - 13px);
+    left: 0px;
+    opacity: 0;
+    font-size: 24px;
+    position: absolute;
+    transition: all 0.2s ease-in 1s ease-out 0.2s;
+}
+div.leftboard:hover .logotitle{
+    left: 100px;
+    opacity: 1;
+}
+div.separatore{
+    position: absolute;
+    top: 70px;
+    width: 50px;
+    left: 5px;
+    height: 1px;
+    background-color: black;
+}
+div.separatore2{
+    position: absolute;
+    top: 310px;
+    width: 50px;
+    left: 5px;
+    height: 1px;
+    background-color: black;
+}
+div.leftboard:hover .separatore{
+    width: 250px;
+}
+div.leftboard:hover .separatore2{
+    width: 250px;
+}
+div.logo:hover .logotitle{
+    transition: all 0.2s ease-in-out 0s;
+    color: white;
+    text-shadow: 3px 3px 6px black;
+}
+.quad{
+    width: 30px;
+    height: 20px;
+    border: 3px black solid;
+    /* background-color: var(--hlogo); */
+    border-top: 0px;
+    position: absolute;
+    top: var(--htop);
+    left: var(--hleft);
+    border-radius: 0px 0px 5px 5px;
+}
+.tria{
+    border-radius: 4px;
+    rotate: 45deg;
+    border: 3px solid black;
+    border-right: 0px;
+    border-bottom: 0px;
+    position: absolute;
+    top: calc( var(--htop) - 12px);
+    left: calc(var(--hleft) + 5px);
+    width: calc(32px / 1.46 + 1px);
+    height: calc(32px / 1.414 + 1px);
+    /* background-color: var(--hlogo); */
+}
+
+.quad2{
+    width: 5px;
+    height: 10px;
+    border: 3px black solid;
+    background-color: var(--leftboard);
+    color: transparent;
+    position: absolute;
+    border-bottom: 5px solid transparent;
+    border-radius: 2px 2px 0px 0px;
+    top: 6px;
+    left:9px;
+    margin: 0px;
+    opacity: 0;
+}
+.logo:hover .quad2{
+    opacity: 1;
+}
+#pr{
+    width: 60px;
+    height: 60px;
+    transition: all 3s ease-in-out 0.7;
+    border-radius: 0px 50px 50px 0px;
+    background-color: transparent;
+
+}
+#pr:hover{
+    width: 260px;
+    background-color: rgba(88, 88, 88, 0.418);
+    transition: all 5s ease-in-out 2;
+    border-radius: 0px 0px 0px 0px;
+
+}
+.pr{
+    top: 70px;
+    transition: all 3s ease-in-out 0.7;
+
+}
+.prtitle{
+    opacity: 0;
+    text-align: left;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+    
+    position: absolute;
+    font-size: 16px;
+    width: 60px;
+    text-align: center;
+    float: right;
+    padding-top: calc(20px) ;
+    transition: all 3s ease-in-out 0.7;
+    padding-bottom: 22.23px;
+
+
+}
+.leftboard:hover .link{
+    position: absolute;
+    top: -10px;
+}
+.leftboard:hover .prtitle{
+    text-shadow: 3px 3px 6px black;
+    position: absolute;
+    left: 0px;
+    opacity: 1;
+    transition: all 3s ease-in-out 0.7;
+    width: 260px;
+
+}
+#pr:hover .prtitle{
+    color: white;
+    transition: all 3s ease-in-out 0.7;
+}
+.primg{
+    width: 40px;
+    height: 40px;
+    background-color: var(--hlogo);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px ;
+    float: left;
+    position: absolute;
+    transition: all 3s ease-in-out 0.7;
+
+}
+#pr:hover .primg{
+    border-radius: 35%;
+    transition: all 3s ease-in-out 0.5;
+    background-size: 90px;
+
+}
+.titlepr{    
+    width: 60px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    justify-content: center;
+    opacity: 1;
+    font-size: 12;
+    transition: all 3s ease-in-out 0.7;
+}
+
+.leftboard:hover .titlepr{    
+    margin-top: 0px;
+    color: transparent;
+    margin-bottom: 0px;
+    height: 0px;
+    font-size: 0px;
+}
+.profile1 .primg{
+    background-image: url(/images/profile/293360802_138973202101816_1884842679503724644_n.jpg);
+    background-size: 80px;
+    background-position-x: center;
+}
